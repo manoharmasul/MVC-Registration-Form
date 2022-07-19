@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<h1>Registration</h1>
+
+@using (Html.BeginForm())
+{
+    <table class="table">
+        <tr>
+            <td>User Name</td>
+            <td>
+                @Html.TextBox("user name")
+            </td>
+
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                @Html.TextBox("password")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" class="btn btn-primary">Sign Up"/>
+            </td>
+        </tr>
+    </table>
+
+}
